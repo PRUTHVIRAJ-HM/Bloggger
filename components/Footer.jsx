@@ -5,7 +5,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className='flex justify-around flex-col gap-2 sm:gap-0 sm:flex-row bg-black py-5 items-center'>
-        <Image src={assets.logo_light} alt="" width={120}/>
+        <Image src={assets.logo_light} alt='' width={120}/>
         <p className='text-white text-sm'>Made with ❤ by Pruthviraj HM</p>
         <div className='flex '>
           <Image className='cursor-pointer' src={assets.facebook_icon} alt='' width={40}/>
