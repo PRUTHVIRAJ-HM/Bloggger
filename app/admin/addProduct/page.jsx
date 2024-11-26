@@ -12,7 +12,7 @@ const page = () => {
     title:"",
     description:"",
     category:"Startup",
-    author:"Jack",
+    author:"Alex Bennet",
     authorImg:"/author_img.png"   //the path of the file might need to change if it doesnt work we just remove the /Assets part from the path
   })
   const onChangeHandler=(event)=>{
