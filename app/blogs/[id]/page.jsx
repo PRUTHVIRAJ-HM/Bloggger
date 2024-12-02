@@ -1,6 +1,6 @@
 'use client'
 import React ,{ useEffect, useState } from 'react';
-import { assets} from '@/Assets/assets';
+import {assets} from '@/Assets/assets';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -44,25 +44,17 @@ const page = ({params}) => {
     <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
         <Image className='border-4 border-white' src={data.image} width={1280} height={720} alt=''/>
         <h1 className='my-8 text-[26px] font-semibold'>Introduction</h1>
-        <p className='text-[18px]'>{data.description}</p>
-        <h3 className='my-5 text-[18px] font-semibold'>Step 1: Lorem 20 uighriu84wdqwfd qesdwfcq84dq 5874wed 6584wqd </h3>
-        <p className='my-3'>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum lectus consectetur duis auctor molestie. Torquent arcu pharetra varius mattis at dignissim pharetra taciti elit. Est curabitur diam, aenean ad lacus nunc. Euismod dui cubilia pharetra dictumst rutrum sit tristique urna. Leo dignissim nostra eu natoque varius volutpat posuere imperdiet. Augue efficitur lacus risus phasellus; mi porttitor himenaeos. Enim fames dolor justo massa adipiscing viverra facilisi.</p>
-        <p className='my-3'>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum lectus consectetur duis auctor molestie. Torquent arcu pharetra varius mattis at dignissim pharetra taciti elit. Est curabitur diam, aenean ad lacus nunc. Euismod dui cubilia pharetra dictumst rutrum sit tristique urna. Leo dignissim nostra eu natoque varius volutpat posuere imperdiet. Augue efficitur lacus risus phasellus; mi porttitor himenaeos. Enim fames dolor justo massa adipiscing viverra facilisi.</p>
+        <p className='text-[18px] text-justify'>{data.glimpse}</p>
 
-        <h3 className='my-5 text-[18px] font-semibold'>Step 2: Lorem 20 uighriu84wdqwfd qesdwfcq84dq 5874wed 6584wqd </h3>
-        <p className='my-3'>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum lectus consectetur duis auctor molestie. Torquent arcu pharetra varius mattis at dignissim pharetra taciti elit. Est curabitur diam, aenean ad lacus nunc. Euismod dui cubilia pharetra dictumst rutrum sit tristique urna. Leo dignissim nostra eu natoque varius volutpat posuere imperdiet. Augue efficitur lacus risus phasellus; mi porttitor himenaeos. Enim fames dolor justo massa adipiscing viverra facilisi.</p>
-        <p className='my-3'>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum lectus consectetur duis auctor molestie. Torquent arcu pharetra varius mattis at dignissim pharetra taciti elit. Est curabitur diam, aenean ad lacus nunc. Euismod dui cubilia pharetra dictumst rutrum sit tristique urna. Leo dignissim nostra eu natoque varius volutpat posuere imperdiet. Augue efficitur lacus risus phasellus; mi porttitor himenaeos. Enim fames dolor justo massa adipiscing viverra facilisi.</p>
+        <h3 className='my-5 text-[26px] font-semibold'>Description</h3>
+        <p className='text-[18px] text-justify'>{data.description}</p>
 
-        <h3 className='my-5 text-[18px] font-semibold'>Step 3: Lorem 20 uighriu84wdqwfd qesdwfcq84dq 5874wed 6584wqd </h3>
-        <p className='my-3'>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum lectus consectetur duis auctor molestie. Torquent arcu pharetra varius mattis at dignissim pharetra taciti elit. Est curabitur diam, aenean ad lacus nunc. Euismod dui cubilia pharetra dictumst rutrum sit tristique urna. Leo dignissim nostra eu natoque varius volutpat posuere imperdiet. Augue efficitur lacus risus phasellus; mi porttitor himenaeos. Enim fames dolor justo massa adipiscing viverra facilisi.</p>
-        <p className='my-3'>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum lectus consectetur duis auctor molestie. Torquent arcu pharetra varius mattis at dignissim pharetra taciti elit. Est curabitur diam, aenean ad lacus nunc. Euismod dui cubilia pharetra dictumst rutrum sit tristique urna. Leo dignissim nostra eu natoque varius volutpat posuere imperdiet. Augue efficitur lacus risus phasellus; mi porttitor himenaeos. Enim fames dolor justo massa adipiscing viverra facilisi.</p>
+        <h3 className='my-5 text-[26px] font-semibold'>Conclusion</h3>
+        <p className='text-[18px] text-justify'>{data.conclusion}</p>
 
-        <h3 className='my-5 text-[18px] font-semibold'>Conclusion</h3>
-        <p className='my-3'>Lorem ipsum odor amet, consectetuer adipiscing elit. Dictum lectus consectetur duis auctor molestie. Torquent arcu pharetra varius mattis at dignissim pharetra taciti elit. Est curabitur diam, aenean ad lacus nunc. Euismod dui cubilia pharetra dictumst rutrum sit tristique urna. Leo dignissim nostra eu natoque varius volutpat posuere imperdiet. Augue efficitur lacus risus phasellus; mi porttitor himenaeos. Enim fames dolor justo massa adipiscing viverra facilisi.</p>
-
-        <div className='my-24'>
+        <div className='my-24 text-center'>
             <p className='text-black font-semibold my-4'>Share it on Social Media</p>
-            <div className='flex gap-2'>
+            <div className='flex gap-2 justify-center'>
                 <Image src={assets.facebook_icon} width={50} alt=''/>
                 <Image src={assets.twitter_icon} width={50} alt=''/>
                 <Image src={assets.googleplus_icon} width={50} alt=''/>
