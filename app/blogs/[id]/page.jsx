@@ -33,7 +33,9 @@ const page = ({params}) => {
             <Link href={'/'}>
                 <Image src={assets.logo} width={180} alt='' className='w-[130px] sm:w-auto'/>
             </Link>
-            <button className='flex items-center py-1 px-3 gap-2 font-medium sm:py-3 sm:px-6 border border-black shadow-[-7px_7px_0px_#000000]'>Get Started <Image src={assets.arrow} alt='' /></button>
+            <Link href='/admin'>
+                <button className='flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#000000]'>Write Blog<Image src={assets.arrow} alt=''/></button>
+      </Link>
         </div>
         <div className='text-center my-24'>
             <h1 className='text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto'>{data.title}</h1>
@@ -42,10 +44,10 @@ const page = ({params}) => {
         </div>
     </div>
     <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
-        <Image className='border-4 border-white' src={data.image} width={1280} height={720} alt=''/>
+        <Image className='border-4 border-slate-500 rounded' src={data.image} width={1280} height={720} alt=''/>
         <h1 className='my-8 text-[26px] font-semibold'>Introduction</h1>
         <p className='text-[18px] text-justify'>{data.glimpse}</p>
-
+  
         <h3 className='my-5 text-[26px] font-semibold'>Description</h3>
         <p className='text-[18px] text-justify'>{data.description}</p>
 

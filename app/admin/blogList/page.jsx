@@ -31,7 +31,7 @@ const page = () => {
       <h1>All Blogs</h1>
       <div className='realtive h-[80vh] max-w[850px] overflow-x-auto mt-4 border border-gray-400 scrollbar-hide'>
         <table className='w-full test-sm text-gray-500'>
-          <thead className='text-sm text-gray-700 uppercase text-center bg-gray-50'>
+          <thead className='text-sm text-gray-700 uppercase text-left bg-gray-50'>
             <tr>
               <th scope='col' className='hidden sm:block px-6 py-3'>
                 Author Name

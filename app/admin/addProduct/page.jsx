@@ -73,7 +73,7 @@ return(
         <textarea className='w-full sm:w-[500px] mt-4 px-4 py-3 border' name='conclusion' onChange={onChangeHandler} value={data.conclusion} type="text" placeholder='Write the conclusion here' required/>
 
         {/* Blog category insertion section */}
-        <p className='text-xl mt-4'>Blog category</p>
+        <p className='text-xl mt-4'>Blog Category</p>
         <select name="category" onChange={onChangeHandler} value={data.category} className='w-40 mt-4 px-4 py-3 border text-gray-500'>
           <option value="Startup">Startup</option>
           <option value="Technology">Technology</option>
