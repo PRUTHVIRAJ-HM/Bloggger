@@ -1,7 +1,7 @@
-import {Outfit} from'next/font/google'
+import {Poppins} from'next/font/google'
 import "./globals.css";
 
-const outfit=Outfit({subsets:['latin'],weight:["400","500","600","700"]})
+const poppins=Poppins({subsets:['latin'],weight:["400","500","600","700"]})
 
 export const metadata = {
   title: "Bloggger",
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={outfit.className}>
+      <body className={poppins.className}>
         <main>{children}</main>
       </body>
     </html>

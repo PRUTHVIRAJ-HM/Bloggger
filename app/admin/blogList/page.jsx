@@ -4,9 +4,8 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+
 const page = () => {
-
-
   const [blogs,setBlogs] = useState([]);
   const fetchBlogs = async()=>{
     const response = await axios.get(`/api/blog`);

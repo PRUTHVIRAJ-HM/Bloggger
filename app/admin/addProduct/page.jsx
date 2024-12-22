@@ -11,9 +11,10 @@ const page = () => {
   const [data,setData]=useState({
     title:"",
     glimpse:"",
-    description:"",
+    description:"",   //rich text holder
     category:"Startup",
     author:"",
+    conclusion:"",
     authorImg:"/author_img.png"   //the path of the file might need to change if it doesnt work we just remove the /Assets part from the path
   })
   const onChangeHandler=(event)=>{
@@ -67,6 +68,7 @@ return(
         {/* Blog description insertion section */}
         <p className='text-xl mt-4'>Blog Description</p>
         <textarea className='w-full sm:w-[500px] mt-4 px-4 py-3 border text-justify' name='description' onChange={onChangeHandler} value={data.description} type="text" placeholder='Write the content here' required />
+          
 
         {/* Blog conclusion insertion section */}
         <p className='text-xl mt-4'>Blog Conclusion</p>
@@ -82,6 +84,8 @@ return(
         <br/>
         {/* Add button section */}
         <button type='submit' className='mt-8 w-40 h-12 bg-black text-white'>Add</button>
+        
+        
       </form>
     </>
   )

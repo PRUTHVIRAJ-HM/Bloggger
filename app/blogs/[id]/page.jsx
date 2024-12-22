@@ -45,11 +45,11 @@ const page = ({params}) => {
     </div>
     <div className='mx-5 max-w-[800px] md:mx-auto mt-[-100px] mb-10'>
         <Image className='border-4 border-slate-500 rounded' src={data.image} width={1280} height={720} alt=''/>
-        <h1 className='my-8 text-[26px] font-semibold'>Introduction</h1>
+        <h1 className='my-5 text-[24px] font-semibold'>Summary</h1>
         <p className='text-[18px] text-justify'>{data.glimpse}</p>
   
-        <h3 className='my-5 text-[26px] font-semibold'>Description</h3>
-        <p className='text-[18px] text-justify'>{data.description}</p>
+        
+        <div className='blog-content' dangerouslySetInnerHTML={{__html:data.description}}></div>
 
         <h3 className='my-5 text-[26px] font-semibold'>Conclusion</h3>
         <p className='text-[18px] text-justify'>{data.conclusion}</p>
