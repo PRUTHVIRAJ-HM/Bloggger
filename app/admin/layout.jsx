@@ -1,13 +1,25 @@
-import { assets } from "@/Assets/assets";
-import Sidebar from "@/components/AdminComponents/Sidebar";
-import Image from 'next/image';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+'use client'
+import { assets } from "@/Assets/assets"
+import Sidebar from "@/components/AdminComponents/Sidebar"
+import Image from 'next/image'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import { usePathname } from 'next/navigation'
 
 export default function Layout({children}){
+    const pathname = usePathname()
+    
+    // Don't apply layout to login page
+    if (pathname === '/admin/login') {
+        return (
+            <>
+                <ToastContainer theme="dark"/>
+                {children}
+            </>
+        )
+    }
+
     return (
-        <>
         <div className="flex">
             <ToastContainer theme="dark"/>
             <Sidebar/>
@@ -19,6 +31,5 @@ export default function Layout({children}){
                 {children}
             </div>
         </div>
-        </>
     )
 }

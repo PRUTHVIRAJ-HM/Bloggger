@@ -30,7 +30,7 @@ const Header = () => {
       <div className='flex justify-between items-center'>
         <Image src={assets.logo} width={180} height={180} alt='' className='w-[130px] sm:w-auto'/>
         
-        <Link href='/admin'>
+        <Link href='/admin/login'>
         <button className='flex items-center gap-2 font-medium py-1 px-3 sm:py-3 sm:px-6 border border-solid border-black shadow-[-7px_7px_0px_#000000]'>Write Blog<Image src={assets.arrow} alt=''/></button>
         </Link>
       </div>
